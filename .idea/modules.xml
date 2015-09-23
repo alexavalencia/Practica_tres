@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Practica_tres.iml" filepath="$PROJECT_DIR$/Practica_tres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/punto5_formulario/punto5_formulario.iml" filepath="$PROJECT_DIR$/punto5_formulario/punto5_formulario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/punto_2_calculadora/punto_2_calculadora.iml" filepath="$PROJECT_DIR$/punto_2_calculadora/punto_2_calculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/punto_3_promedio/punto_3_promedio.iml" filepath="$PROJECT_DIR$/punto_3_promedio/punto_3_promedio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/punto_4_area/punto_4_area.iml" filepath="$PROJECT_DIR$/punto_4_area/punto_4_area.iml" />
+    </modules>
+  </component>
+</project>

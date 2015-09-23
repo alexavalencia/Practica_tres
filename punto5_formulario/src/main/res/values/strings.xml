@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Punto5_Formulario</string>
+
+    <string name="titulo">Formulario De Registro</string>
+    <string name="nombre">Nombre: </string>
+    <string name="apellido">Apellido: </string>
+    <string name="ID">Identificacion: </string>
+    <string name="sexo">Sexo: </string>
+    <string name="femenino">Femenino </string>
+    <string name="masculino">Masculino </string>
+    <string name="fecha">Fecha De Nacimiento:  </string>
+    <string name="fecha_boton"></string>
+    <string name="ciudad">Ciudad De Nacimiento</string>
+    <string name="mensaje">¿Que le gusta hacer en su tiempo libre?</string>
+    <string name="confirmar">Confirmar</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Punto_4_area</string>
+    <string name="titulo1">Calcula El Area De</string>
+    <string name="titulo2">Figuras Geometricas</string>
+    <string name="cuadrado">Area Cuadrado</string>
+    <string name="triangulo">Area Triangulo</string>
+    <string name="circulo">Area Circulo</string>
+    <string name="rectangulo">Area Rectangulo</string>
+    <string name="Lado">Lado(mts):</string>
+    <string name="altura">Altura(mts):</string>
+    <string name="radio">Radio(mts):</string>
+    <string name="base">Base(mts):</string>
+    <string name="titulo3">El Area Es:</string>
+    <string name="titulo4">Respuesta...</string>
+    <string name="boton">Calcular</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculo Nota Final</string>
+    <string name="titulo">Calculo Nota Final</string>
+    <string name="subtitulo">Ingrese las siguientes notas: </string>
+    <string name="quiz">Quices(15%): </string>
+    <string name="expo">Exposiciones(10%): </string>
+    <string name="lab">Laboratorios(40%): </string>
+    <string name="p_final">Proyecto Final(35%): </string>
+    <string name="final_1">Definitiva(100%):  </string>
+    <string name="boton">Calcular </string>
+    <string name="action_settings">Settings</string>
+</resources>
