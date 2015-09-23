@@ -1,4 +1,4 @@
-package com.alexandracastrillonvalencia.practica_tres;
+package com.alexandracastrillonvalencia.punto_1_interfaz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -13,6 +13,13 @@
     <string name="ciudad">Ciudad De Nacimiento</string>
     <string name="mensaje">¿Que le gusta hacer en su tiempo libre?</string>
     <string name="confirmar">Confirmar</string>
+    <string name="nombre2">Nombre: </string>
+    <string name="apellido2">Apellido: </string>
+    <string name="Identidad2">N°De documento: </string>
+    <string name="Fecha2">F Nacimiento: </string>
+    <string name="ciudad2">Ciudad De Origen: </string>
+    <string name="sexo2">Sexo: </string>
+    <string name="hobbie2">Pasa Tiempos: </string>
 
     <string name="action_settings">Settings</string>
 

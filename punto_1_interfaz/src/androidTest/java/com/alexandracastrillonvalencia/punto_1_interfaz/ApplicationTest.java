@@ -1,4 +1,4 @@
-package com.alexandracastrillonvalencia.practica_tres;
+package com.alexandracastrillonvalencia.punto_1_interfaz;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

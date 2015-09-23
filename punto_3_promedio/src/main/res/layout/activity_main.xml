@@ -156,17 +156,16 @@
             android:layout_marginLeft="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             />
-        <EditText
+        <TextView
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:inputType="numberDecimal"
             android:background="@color/darkgray"
             android:id="@+id/n_final"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:layout_marginLeft="40dp"
             android:textColor="@color/darkcyan"
             android:textSize="25dp"
-            android:maxLength="4"
+            android:maxLength="6"
 
             />
     </LinearLayout>

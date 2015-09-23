@@ -15,7 +15,8 @@
             android:textSize="25dp"
             android:padding="48dp"
             android:layout_gravity="center"
-            android:textStyle="italic"
+            android:textStyle="italic|bold"
+            android:textColor="@color/black"
             />
         <LinearLayout
             android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
                 android:textSize="20dp"
                 android:textStyle="normal"
                 android:id="@+id/name"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName|textCapWords"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -57,7 +58,7 @@
                 android:textSize="20dp"
                 android:textStyle="normal"
                 android:id="@+id/lastname"
-                android:inputType="textPersonName"/>
+                android:inputType="textPersonName|textCapWords"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -138,16 +139,7 @@
                 />
 
         </LinearLayout>
-        <EditText
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:textSize="20dp"
-            android:textStyle="normal"
-            android:id="@+id/F_number"
-            android:inputType="number"
-            android:maxLength="10"
-            android:enabled="false"/>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -165,6 +157,7 @@
                 android:entries="@array/valores_array"
                 android:layout_marginLeft="@dimen/activity_vertical_margin"
                 android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/ciudad"
 
                 >
             </Spinner>
@@ -189,6 +182,7 @@
                 android:text="Deporte"
                 android:textSize="20dp"
                 android:id="@+id/s_1"
+                android:onClick="selectItems"
                 />
             <CheckBox
                 android:layout_width="wrap_content"
@@ -197,6 +191,7 @@
                 android:layout_marginLeft="@dimen/activity_vertical_margin"
                 android:textSize="20dp"
                 android:id="@+id/s_2"
+                android:onClick="selectItems"
                 />
         </LinearLayout>
         <LinearLayout
@@ -212,6 +207,7 @@
                 android:text="Dormir"
                 android:textSize="20dp"
                 android:id="@+id/s_3"
+                android:onClick="selectItems"
                 />
             <CheckBox
                 android:layout_width="wrap_content"
@@ -220,6 +216,7 @@
                 android:layout_marginLeft="40dp"
                 android:textSize="20dp"
                 android:id="@+id/s_4"
+                android:onClick="selectItems"
                 />
         </LinearLayout>
 
@@ -231,9 +228,166 @@
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:textSize="20dp"
             android:id="@+id/s_conf"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre2"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/i_nombre"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apellido2"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/i_apellido"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Identidad2"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/i_identidad"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sexo2"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/i_sexo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Fecha2"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/i_fecha"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ciudad2"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/i_ciudad"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hobbie2"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/i_hobbie"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="100dp"/>
     </LinearLayout>
-
-
-
 </ScrollView>

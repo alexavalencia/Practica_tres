@@ -11,7 +11,7 @@ public class Registro_datos {
     private String fecha;
     private String ciudad;
     private String sexo;
-    private String[] hobbies;
+
 
     public String getIdentidad() {
         return identidad;
@@ -55,13 +55,7 @@ public class Registro_datos {
         this.sexo = sexo;
     }
 
-    public String[] getHobbies() {
-        return hobbies;
-    }
 
-    public void setHobbies(String[] hobbies) {
-        this.hobbies = hobbies;
-    }
 
     public String getCiudad() {
         return ciudad;

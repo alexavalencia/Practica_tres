@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private  int a,b,c,d;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText nota2=(EditText)findViewById(R.id.n_expo);
         final EditText nota3=(EditText)findViewById(R.id.n_lab);
         final EditText nota4=(EditText)findViewById(R.id.n_py);
-        final EditText NotaFinal=(EditText)findViewById(R.id.n_final);
+        final TextView NotaFinal=(TextView)findViewById(R.id.n_final);
         Button confirma=(Button)findViewById(R.id.calcular);
 
 
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 d=nota4.getText().toString().compareTo("");
                 if(a==0 || b==0 || c==0 || d==0){
                     nf=0;
+                    auxi = Double.toString(nf);
 
                 }else {
                     auxi =nota1.getText().toString();
@@ -43,11 +45,17 @@ public class MainActivity extends AppCompatActivity {
                     n3=Double.valueOf(auxi).doubleValue();
                     auxi=nota4.getText().toString();
                     n4=Double.valueOf(auxi).doubleValue();
-                    nf=((n1*0.15)+(n2*0.1)+(n3*0.4)+(n4*0.35));
+                    if(n1>5 || n2>5 || n3>5 || n4>5){
+                        auxi="Error";
+                    }else{
+                        nf=((n1*0.15)+(n2*0.1)+(n3*0.4)+(n4*0.35));
+                        auxi = Double.toString(nf);
+                    }
+
 
                 }
 
-                auxi = Double.toString(nf);
+
                 NotaFinal.setText(auxi);
 
             }

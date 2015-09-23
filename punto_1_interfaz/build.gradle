@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.alexandracastrillonvalencia.practica_tres"
+        applicationId "com.alexandracastrillonvalencia.punto_1_interfaz"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
